@@ -1,5 +1,5 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+<button {{action "togglePika"}}>Show Pika</button>
+{{#if showPika}}
+  {{pikaday-inputless value="2017-07-07"}}
+{{/if}}
