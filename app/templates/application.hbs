@@ -1,5 +1,7 @@
 
 <button {{action "togglePika"}}>Show Pika</button>
 {{#if showPika}}
-  {{pikaday-inputless value="2017-07-07"}}
+  {{#click-outside action=(action "togglePika")}}
+    {{pikaday-inputless value="2017-07-07"}}
+  {{/click-outside}}
 {{/if}}
